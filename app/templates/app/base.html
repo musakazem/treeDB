@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href=" {% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/search_form.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/result_page.css' %}">
+</head>
+<body>
+
+<div class="jumbotron" style="background-image: url('/static/assets/img/tree4-bg.jpg');">
+	
+	<div class="jumbo-container">
+		<div class="search-container">
+			<form id="my-form" class="form-container" action="{% url 'showResults' %}" method="post">
+			{% csrf_token %}
+			<input id="search-bar" type="search" name="searched" placeholder="Search">
+			<a href="#" onclick="document.getElementById('my-form').submit()"><img src="{% static 'assets/img/search-icon.png' %}" class="search-icon"></a>
+		</div>
+		<div class="text-container">
+				<h3>Search Parameters</h3>
+				<span>-Search by number plates, e.g <strong>000352</strong>or<strong>352</strong><span><br>
+				<span>-Search by categories, e.g<strong> باقلائیان</strong></span><br>
+				<span>-Search by age, e.g <strong>age: 23</strong></span><br>
+				<span>-Search by circumference, e.g <strong>circumference: 50</strong></span>
+		</div>
+	</div>
+
+	
+</div>
+
+{% block search_results %}
+{% endblock %}
+
+</form>
+
+<script>
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+</script>
+</body>
+</html>

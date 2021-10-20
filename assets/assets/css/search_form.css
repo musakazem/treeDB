@@ -1,0 +1,77 @@
+
+
+.jumbotron{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+}
+
+.jumbotron .h1{
+  margin: 0;
+}
+
+.jumbo-container{
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  height: 300px;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.search-container {
+  width: 50%;
+  float: left;
+}
+
+.text-container {
+  width: 50%;
+  float: right;
+  border-left: solid 1px grey;
+  padding: 15px;
+}
+
+.form-container{
+  width: 490px;
+  display: flex;
+  margin: 50px auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+     opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 35px;
+  height: auto;
+  top: 4px;
+  right: -10px;
+}
+
+
+

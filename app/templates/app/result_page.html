@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+	{% block search_results %}
+	<div class="container">
+		<div class="table-wrapper">
+			<table class="fl-table">
+				<thead>
+					<tr>
+						<th>شماره شناسنامه</th>
+						<th>تیره</th>
+						<th>تیره</th>
+						<th>سن تخمینی</th>
+						<th>محیط تنه</th>
+						<th>میوه دهی</th>
+						<th>ناحیه شهری</th>
+						<th>نشانی</th>
+						<th>وضعیت فصلی</th>
+						<th>صدور شناسنامه</th>
+						<th>وضعیت</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					{% for obj in objs %}
+					<tr>
+						<td><a href = "{% url 'showDetails' plate_no=obj.number_plate|cut:' ' %}">{{obj.number_plate}}</a></td>
+						<td>{{obj.type.tree_type}}</td>
+						<td>{{obj.type.category}}</td>
+						<td>{{obj.age}}</td>
+						<td>{{obj.trunk_circumference}}</td>
+						<td>{{obj.type.season}}</td>
+						<td>{{obj.type.fruit_bearing}}</td>
+						<td>{{obj.sector}}</td>
+						<td>{{obj.address}}</td>
+						<td>{{obj.year_planted}}</td>
+						<td>{{obj.status}}</td>
+					</tr>
+					{% endfor %}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	{% endblock %}

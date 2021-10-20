@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<title>Tree DB</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/detail_page.css' %}">
+</head>
+<body style="background-image: url('/static/assets/img/tree-bg.jpg');">
+
+	<div class="container">
+		<div class="main">
+			<div class="flex-container">
+				<div class="img-container">
+					<img src="{% static 'assets/img/tree10-icon.png' %}">
+					<img src="{% static 'assets/img/tree-icon.png' %}">
+					<img src="{% static 'assets/img/tree2-icon.png' %}">
+					<img src="{% static 'assets/img/tree3-icon.png' %}">
+					<img src="{% static 'assets/img/tree4-icon.png' %}">
+					<img src="{% static 'assets/img/tree5-icon.png' %}">
+					<img src="{% static 'assets/img/tree6-icon.png' %}">
+					<img src="{% static 'assets/img/tree8-icon.png' %}">
+					<img src="{% static 'assets/img/tree7-icon.png' %}">
+					<img src="{% static 'assets/img/tree9-icon.png' %}">
+				</div>
+				<div style="text-align: right;">
+
+					<p>نام درخت<span>{{obj.type.tree_type}}</span></p>
+
+					<p>تیره:<span>{{obj.type.category}}</span></p>
+
+					<p>سن تخمینی:<span>{{obj.age}}</span></p>
+
+					<p>محیط تنه:<span>{{obj.trunk_circumference}}</span></p>
+
+					<p>وضعیت فصلی:<span>{{obj.type.season}}</span></p>
+
+					<p>میوه دهی:<span>{{obj.type.fruit_bearing}}</span></p>
+
+					<p>ناحیه شهری:<span>{{obj.sector}}</span></p>
+
+					<p>نشانی:<span>{{obj.address}}</span></p>
+
+					<p>صدور شناسنامه:<span>{{obj.year_planted}}</span></p>
+
+					<p>وضعیت:<span>{{obj.status}}</span></p>
+
+				</div>
+
+				<div class="no-plate">
+					<img src="{% static 'assets/img/plate-no.png' %}">
+					<h2>کد شناسایی درخت</h2>
+					<p>(شماره شناسنامه درخت)</p>
+					<h1>{{obj.number_plate}}</h1>
+				</div>
+				
+			</div>
+		
+		</div>
+	</div>
+
+<script>
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+</script>
+</body>
+</html>

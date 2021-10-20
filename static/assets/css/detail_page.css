@@ -1,0 +1,70 @@
+body{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flex-container{
+
+	display: flex;
+	margin: 20px auto;
+	width: 750px;
+}
+
+.img-container{
+	width: 100px;
+}
+
+.main{
+
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 15px;
+	padding: 20px;
+}
+.main > .flex-container > div > img {
+	height: 44px;
+	width: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	position: relative;
+	bottom: 10px;
+}
+
+.main > .flex-container > div > p{
+	margin-bottom: 32px;
+	font-size: 14pt;
+	
+}
+
+.main > .flex-container > div > p > span{
+	font-weight: bolder;
+}
+
+
+.main > .flex-container > .no-plate > img {
+	height: 400px;
+	width: auto;
+}
+
+.no-plate{
+	position: relative;
+	top: 220px;
+}
+
+.no-plate > h2{
+	position: absolute;
+	top: 55px;
+	right: 80px;
+}
+.no-plate > p {
+	position: absolute;
+	top: 91px;
+	right: 105px;
+}
+
+.no-plate > h1 {
+	position: absolute;
+	top: 120px;
+	right: 115px;
+}
