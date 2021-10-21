@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6!ymof3&wqdu!_v-ru^rx^m!evse)6jzyl_ovgqk6e1&jyz_^+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['treedb-app.herokuapp.com']
 
 
 # Application definition
