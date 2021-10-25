@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-6!ymof3&wqdu!_v-ru^rx^m!evse)6jzyl_ovgqk6e1&jyz_^+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['treedb-app.herokuapp.com']
+ALLOWED_HOSTS = [
+    'localhost',
+    'treedb-app.herokuapp.com'
+]
 
 
 # Application definition
@@ -138,7 +141,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
