@@ -95,7 +95,7 @@ DATABASES = {
 
         'PASSWORD': '4444',
 
-        'HOST': 'treedb-app.herokuapp.com',
+        'HOST': 'localhost',
 
         'PORT': '5432',
     }
