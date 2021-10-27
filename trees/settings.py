@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'treedb-app.herokuapp.com'
+    'treedb-app.herokuapp.com',
 ]
 
 
